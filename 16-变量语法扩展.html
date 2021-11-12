@@ -1,0 +1,63 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-17 12:51:41
+ * @LastEditTime: 2021-10-17 13:42:09
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\16-变量语法扩展.html
+
+
+1.4变量语法扩展
+    1.更新变量
+        一个变量被重新复赋值后,它原有的值就会被覆盖,变量值将以最后-次喊的值为准。
+
+    2.同时声明多个变量
+        同时声明多个变量时,只需要写一个var，多个变量名之间使用英文逗号隔开。
+
+    3.声明变量特殊情况
+    情况                                说明                结果
+    var age; console.log(age);     只声明不赋值            undefined
+    console.log(age)                不声明不赋值直接使用     报错
+    age = 10; console.log(age);    不声明只赋值            10
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+
+        // 1.更新变量
+        var a=12;
+        console.log(a);
+        a=56;
+        console.log(a);
+        
+
+        // 2.声明多个变量
+        // var age=18;
+        // var address='刘家村';
+        // var gz=2000;
+
+        var age=18,
+            address='刘家村',
+            gz=2000;
+            一工
+        // 3.声明变量的特殊情况
+        // 3.1 只声明不赋值结果是?程序也不知道里面存的是啥所以结果是undefined 未定 义的
+        var sex;
+        console.1og(sex); // undefined
+        // 3.2 不声明不赋值直接使用某个变量会报错滴
+        // console. log(te1);
+        // 3.3 不声明直接赋值使用
+        qq = 110;
+        console.1og(qq) ;
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

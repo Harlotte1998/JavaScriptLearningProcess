@@ -1,0 +1,63 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-21 13:10:01
+ * @LastEditTime: 2021-10-21 13:33:00
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\48-08-比较运算符.html
+
+
+
+4.1比较运算符概述
+概念:比较运算符(关系运算符)是两个数据进行比较时所使用的运算符,
+比较运算后,会返回一个布尔值
+( true / false )作为比较运算的结果。
+运算符名称
+    说明        案例        结果
+    <   小于号                         1<2      true
+    >   大于号                         1>2     false !
+    >=  大于等于号(大于或者等于)        2>=2     true 
+    <=  小于等于号(小于或者等于)        3<=2     false !
+    ==  判等号(会转型)                 37==37   true
+    !=  不等号7 != 37false
+    
+    !==
+    === ==全等要求值和数据类型都一致    37==='37' false
+
+    4.2 =小结
+    符号        作用        用法
+    =       赋值        把右边给左边
+    ==      判断        判断两边值是否相等(注意此时有隐式转换)
+    ===     全等        判断两边的值和数据类型是否完全相同
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 
+        console.log(8>=5);   //false
+        console.log(8<=5);   //false
+        // 1.我们程序里面的等于符号  是 ==  默认转换数据类型  
+        //   会把字符串的数据转换为数字型  只要求值相等就行
+        console.log(8==5);                      //false
+        console.log('字符串'=='字符字符');       //false
+        console.log(89==89);                    //true
+        console.log(18=='18');                  //true
+        console.log(18!=18);                    //false
+
+        // 2. 全等符号  两个变量数值相同   数据类型相同 
+        console.log(18===18);
+        console.log(18==='18');
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

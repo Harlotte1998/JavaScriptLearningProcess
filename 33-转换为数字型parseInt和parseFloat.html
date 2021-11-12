@@ -1,0 +1,102 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-19 15:46:03
+ * @LastEditTime: 2021-10-19 22:21:23
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\33-转换为数字型parseInt和parseFloat.html
+
+
+4.3转换为数字型(重点)
+
+
+    方式                                说明                        案例
+    parselnt(string)函数        将string类型转成整数数值型      parselnt(78)
+    parseFloat(string) 函数     将sring类型转成浮点数数值型     parseFloat(78.21")
+    Number()强制转换函数         将string类型转换为数值型        Number('12')
+    js隐式转换(- * /)           利用算术运算隐式转换为数值型     '12' -0
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var  age=prompt('请输入你的年龄');
+        // 1. parseInt(变量)   可以把字符型的转换为数字型   得到的是整数
+        age01=parseInt(age);
+        console.log(age01);
+        console.log(typeof age01);
+        
+        console.log(parseInt(age));
+        console.log(typeof(parseInt(age)));
+
+        //取出的只能是整数    3.14  和  3.9 是相通的结果
+        console.log(parseInt('3.14'));   //取整数  3
+        console.log(parseInt('3.99'));   //取整数  3
+
+        console.log(parseInt('120px'));     //120  会去除 后面的单位 px
+        console.log(parseInt('ad120px'));   //NaN    第一位不是数字  所以不能转换
+        
+        // 2.parseFloat(变量)  可以把字符型的转换为数字型  得到的是小数  浮点数
+        console.log(parseFloat(3.15));
+        console.log(parseFloat('120px'));     //120  会去除 后面的单位 px
+        console.log(parseFloat('ad120px'));   //NaN    第一位不是数字  所以不能转换
+
+        //3. 利用 Number(变量)  强制转换
+        var  str='123';
+        console.log(Number(str));
+        console.log(typeof Number(str));
+
+        // 4. 隐式转换  利用了算术运算 - * / 
+        console.log('12'-0);    //12     整数  
+        console.log('123'-'120');    //3     整数  
+        console.log('123'*1);    //123     整数  
+
+
+        
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

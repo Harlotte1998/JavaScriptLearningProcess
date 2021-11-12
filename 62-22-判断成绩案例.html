@@ -1,0 +1,62 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-21 17:24:06
+ * @LastEditTime: 2021-10-21 18:06:35
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\62-22-判断成绩案例.html
+
+
+    要求:接收用户输入的分数,根据分数输出对应的等级字母A、B、 C、D、E。
+    其中:
+    1.90分(含)以上,输出: A
+    2.80分(含)~ 90分(不含) ,输出: B
+    3.70分(含)~ 80分(不含) ,输出: C
+    4.60分(含)~ 70分(不含) ,输出: D
+    5.60分(不含)以下,输出: E
+
+
+    ①按照从大到小判断的思路
+    ②弹出prompt输入框,让用户输入分数,把这个值取过来保存到变量中
+    ③使用多分支if else if语句来分别判断输出不同的值
+
+
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var score=prompt('请输入你的分数：');
+
+        
+        if (score>=90) {
+            alert('A  90--100 ');
+            
+        } else  if (score>=80) {
+            alert('B  80--89');
+            
+        } else  if (score>=70) {
+            alert('C  70--79');
+            
+        } else  if (score>=60) {
+            alert('D  60--69');
+            
+        } else {
+            alert('不及格');
+        }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-17 13:44:48
+ * @LastEditTime: 2021-10-17 14:02:34
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\18-交换2个变量的值.html
+案例:课堂练习
+要求:交换两个变量的值(实现思路:使用一个临时变量用来做中间存储)
+
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // javascript  是编程语言 有很强的逻辑性在里面   实现这个要求的思路   先怎么做 后怎么做
+
+        // 1.我们需要个临时变量帮我们
+        // 2.把apple1给我们的临时变量temp
+        // 3.把apple2里面的苹果给apple1 
+        // 4.把临时变量里面的值给apple2
+
+        var  temp;  //声明一个临时变量为空
+        var  apple01='青苹果';
+        var  apple02='红苹果';
+
+        temp=apple01;
+        apple01=apple02;
+        apple02=temp;
+
+        console.log('apple01='+apple01);
+        console.log('apple02='+apple02);
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

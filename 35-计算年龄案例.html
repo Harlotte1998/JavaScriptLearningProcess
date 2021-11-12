@@ -1,0 +1,35 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-19 15:46:31
+ * @LastEditTime: 2021-10-19 22:32:31
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\35-计算年龄案例.html
+
+此案例要求在页面中弹出一一个输入框,我们输入出生年份后，能计算出我们的年龄。
+
+①弹出一个输入框( prompt) ,让用户输入出生年份(用户输入)
+②把用户输入的值用变量保存起来,然后用今年的年份减去变量值，结果就是现在的年龄( 程序内部处理)
+③弹出警示框( alert) ，把计算的结果输出(输出结果)
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var age=prompt('请输入你的出生年份');
+        // var num=2021-parseInt(age);
+        var num=2021-age;       //发生  隐式转换
+        alert('你的年纪是'+num);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

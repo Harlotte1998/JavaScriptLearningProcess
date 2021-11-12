@@ -1,0 +1,107 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-19 13:07:15
+ * @LastEditTime: 2021-10-19 13:24:20
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\22-数字型Number.html
+
+
+2.1简单数据类型(基本数据类型)
+JavaScript中的简单数据类型及其说明如下:
+
+简单数据类型            说明                                            默认值
+Number              数字型，包含整型值和浮点型值,如21、0.21                 0
+Boolean             布尔值类型，如true、false, 等价于1和0                false
+String              字符串类型，如"张三”注意咱们js里面，字符串都带引号      ""
+Undefined  vara;    声明了变量a但是没有给值，此时a = undefined           undefined
+Null   vara= nl;    声明了变量a为空值                                   null
+
+
+2.2数字型Number
+    JavaScript数字类型既可以用来保存整数值,也可以保存小数(浮点数)。
+    var age = 21;      //整数
+    var Age = 21.3747; // 小数
+
+1.数字型进制
+        最常见的进制有二进制、八进制、十进制、十六进制。
+        现阶段我们只需要记住,在JS中八进制前面加0，十六进制前面加0x
+
+
+        1.八进制 0~7 我们程序里面数字前面加0表示八进制
+
+        2.十六进制0~9 a~f  #fffff数字的前面加 0x表示十六进制
+
+
+
+
+
+    // 1.八进制数字序列范围: 0~7
+    var num1 = 07; // 对应十进制的7
+    var num2 = 019;
+    //对应十进制的19
+    var num3 = 08;
+    //对应十进制的8
+    // 2.十六进制数字序列范围: 0~9以及A~F
+    var num = 0xA; !
+    
+
+
+
+        <script>
+            var num = 10;           // num数字型
+            varPI=3.14              //PI数字型
+            //1.八进制0~7我们程序里面数字前面加0表示八进制
+            var num1 = 010;
+            console. log(num1);     // 010 八进制 转换为10进制就是8
+            var num2 = 012;
+            console . log(num2);
+            //2.十六进制   0~9  a~f  #fffff数字的前面加 0x表示十六进制
+            var num3 = 0x9;
+            console . log(num3);
+            var num4 = Oxa ;
+            console.1log(num4);
+
+            // 3.数字型的最大值
+            console. log(NunberjMAX_ VALUE);
+            // 4.数字型的最小值
+            console . log(Number .MIN VALUE);
+            // 5.无穷大
+            console. log(Number .MAX _VALUE * 2); // Infinity 无穷大
+            //6.无穷小
+            console. log( -Number .MAX_ _VALUE * 2); // -Infinity 无穷大
+            // 7.非数字
+            console. log( 'pink老师'- 100); // NaN
+
+        </script>
+
+
+
+2.数字型范围
+    JavaScript中数值的最大和最小值
+    alert (Number .MAX VALUE); // 1. 7976931348623157e+ 308
+    alert (Number .MIN VALUE); // 5e-324
+
+3.数字型三个特殊值
+    alert (Infinity);       // Infinity
+    alert(-Infinity);       // -Infinity 
+    alert (NaN) ;           // NaN
+    ●Infinity , 代表无穷大,大于任何数值
+    ●-Infinity ,代表无穷小,小于任何数值
+    ●NaN，Notanumber,代表一个非数值
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+

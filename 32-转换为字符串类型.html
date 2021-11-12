@@ -1,0 +1,57 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-19 15:45:51
+ * @LastEditTime: 2021-10-19 21:37:06
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\32-转换为字符串类型.html
+4.1什么是数据类型转换
+    使用表单、prompt 获取过来的数据默认是字符串类型的,此时就不能直接简单的进行加法运算,而需要转换变
+    量的数据类型。通俗来说,就是把一种数据类型的变量转换成另外-种数据类型。
+
+    我们通常会实现3种方式的转换:
+    ●转换为字符串类型
+    ●转换为数字型
+    ●转换为布尔型
+
+4.2转换为字符串
+    方式说明案例
+    toString()      转成字符串                     var num= 1; alert(num.toString();
+    String()        强制转换转成字符串              var num = 1; alert(String(num));
+    加号拼接字符串   和字符串拼接的结果都是字符串     var num = 1; alert(num+“我是字符串");
+
+    ●toString0和String0使用方式不-样。
+    ●三种转换方式,我们更喜欢用第三种加号拼接字符串转换方式,这一种方式也称之 为隐式转换。
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1.把数字转换为字符串类型  变量.tostring()
+        var num=10;
+        var str=num.toString();
+        console.log(str);
+        console.log(typeof str);
+
+
+        // 2.我们利用  string(变量)
+        console.log(String(num) );
+        console.log(typeof(String(num)) );
+
+        //3.利用 + 拼接字符串的方法实现转换效果    隐式转换  
+        console.log(num+'');     //加一个空字符
+        console.log(typeof(num+'') );
+        
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

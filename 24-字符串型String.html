@@ -1,0 +1,58 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-19 13:28:25
+ * @LastEditTime: 2021-10-19 13:38:19
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\24-字符串型String.html
+
+
+
+2.3字符串型String
+字符串型可以是引号中的任意文本,其语法为双引号””和单引号"
+var strMsg = "我爱北京天安门~";  // 使用双引号表示字符串
+var strMsg2 = '我爱吃猪蹄~';    // 使用单引号表示字符串
+//常见错误
+var strMsg3 =我爱大肘子;        //报错,没使用引号,会被认为是js代码,但j s没有这些语法
+因为HTML标签里面的属性使用的是双引号, JS这里我们更推荐使用单引号。
+
+
+
+1.字符串引号嵌套
+    JS可以用单引号嵌套双引号, 或者用双引号嵌套单引号(外双内单,外单内双)
+    var strMsg = '我是"高帅富"程序猿'; // 可以用，包含"
+    var strMsg2 = "我是'高帅富程序猿"; // 也可以用""包含
+    //常见错误
+    var badQuotes = 'What on earth?"; //报错，不能单双引号搭配
+
+
+
+
+2.字符串转义符
+类似HTML里面的特殊字符,字符串中也有特殊字符,我们称之为转义符。
+转义符都是’\开头的,常用的转义符及其说明如下:
+        转义符              解释说明
+        \n          换行符，n是newline的意思
+        \\          斜杠\
+        \'          '单引号
+        \"          双引号
+        \t          tab缩进
+        \b          空格,b是blank的意思
+
+
+
+
+<script>
+    // 'pink' 'pink老师' ' 121  true
+    varstr='我是一个”高富帅"的程序员';
+    console.1og(str);
+    //字符串转义字符都是用\开头但是这些转义字符写道引号里面
+    varstr1="我是一个'高富帅的\n程序员";
+    console .1og(str1);
+</script>
+
+
+
+
+
+-->

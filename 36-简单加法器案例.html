@@ -1,0 +1,44 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-10-19 15:46:43
+ * @LastEditTime: 2021-10-19 22:47:19
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \VSCodeWorkSpace\javaScript零基础通关必备视频\36-简单加法器案例.html
+
+
+
+ 计算两个数的值，用户输入第一个值后,继续弹出第二个输入框并输入第二个值,最后通过弹出窗口显示出两
+次输入值相加的结果。
+
+①先弹出第一个输入框, 提示用户输入第一个值 保存起来
+②再弹出第二二个框,提示用户输入第二二个值保存起来
+③把这两个值相加,并将结果赋给新的变量(注意数据类型转换)
+④弹出警示框( alert)，把计算的结果输出(输出结果)
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str01=prompt('请输入第一个数字');
+        var str02=prompt('请输入第二个数字');
+
+        // var num01=parseFloat(str01);
+        // var num02=parseFloat(str02);
+        // var num=num01+num02;
+
+        var num=parseFloat(str01)+parseFloat(str02);
+        alert('计算的结果是'+num);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
